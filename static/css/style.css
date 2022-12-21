@@ -1,0 +1,52 @@
+h4 {
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 36px;
+margin-top: 10%;
+margin-left: -40px;
+margin-bottom: 2%;
+text-align: center;
+}
+
+.form-control {
+margin-left: 35%;
+height: 50px;
+width: 30%;}
+
+.btn {
+background-color: #18A0FB;
+color: #ffffff;
+font-family: Montserrat;
+font-weight: Medium;
+font-size: 20px;
+opacity: 1;}
+
+.btn.btn-primary {
+margin-left: 45%;
+width: 10%;
+}
+
+.btn.btn-left {
+margin-left: 5%;
+width: 15%;
+}
+
+.btn.btn-right {
+margin-left: 60%;
+width: 15%;
+}
+
+.btn.btn-instructions {
+margin-left: 29%;
+margin-bottom: 1%;
+width: 40%;
+}
+
+iframe {
+background-color: rgba(34, 57, 117, 0.17);
+margin-left: 12%;
+margin-top: -1%;
+width: 76%;
+height: 675px;
+}
