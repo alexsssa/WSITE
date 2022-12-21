@@ -44,7 +44,7 @@ def OT22_page():
 def OT23_page():
     return render_template('OT23-page.html')
 
-@app.route('/OT23-page')
+@app.route('/OT40-page')
 def OT40_page():
     return render_template('OT40-page.html')
 
