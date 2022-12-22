@@ -43,6 +43,13 @@ margin-bottom: 1%;
 width: 40%;
 }
 
+.btn.btn-logout {
+margin-left: 2%;
+margin-right: 50%;
+margin-top: 6%;
+width: 20%;
+}
+
 iframe {
 background-color: rgba(34, 57, 117, 0.17);
 margin-left: 12%;

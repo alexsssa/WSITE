@@ -17,7 +17,6 @@ class FDataBase:
             return res
         except sqlite3.Error as e:
             print("Ошибка получения данных из БД " + str(e))
-
         return False
 
     def getUserBySurname(self, surname):
@@ -31,5 +30,5 @@ class FDataBase:
             return res
         except sqlite3.Error as e:
             print("Ошибка получения данных из БД " + str(e))
-
         return False
+

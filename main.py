@@ -12,33 +12,26 @@ app.config.from_object(__name__)
 app.config.update(dict(DATABASE=os.path.join(app.root_path, 'users.db')))
 login_manager = LoginManager(app)
 
-
 @login_manager.user_loader
 def load_user(user_id):
     return UserLogin().fromDB(user_id, dbase)
-
 
 def connect_db():
     conn = sqlite3.connect(app.config['DATABASE'])
     conn.row_factory = sqlite3.Row
     return conn
 
-
 def get_db():
     if not hasattr(g, 'link_db'):
         g.link_db = connect_db()
     return g.link_db
 
-
 dbase = None
-
-
 @app.before_request
 def before_request():
     global dbase
     db = get_db()
     dbase = FDataBase(db)
-
 
 @app.teardown_appcontext
 def close_db(error):
