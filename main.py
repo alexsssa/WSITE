@@ -1,3 +1,4 @@
+#pip install -r requirements.txt
 import os
 import sqlite3
 from flask_login import LoginManager, login_user, login_required, logout_user
@@ -64,7 +65,7 @@ def logout():
     return redirect(url_for('login'))
 
 
-@app.route('/menu-page')
+@app.route('/menu')
 @login_required
 def menu_page():
     return render_template('menu_page.html')
